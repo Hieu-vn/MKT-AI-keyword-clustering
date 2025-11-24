@@ -44,8 +44,6 @@ htmlcov/
 data/test_results/*.json
 data/test_results/*.csv
 data/test_results/*.log
-data/sample/*.csv
-data/sample/*.tsv
 
 # Temporary files
 *.tmp
@@ -73,34 +71,3 @@ api_keys.json
 *.tar.gz
 *.zip
 *.rar
-
-# ============================================
-# PROPRIETARY BUSINESS LOGIC - DO NOT SHARE
-# ============================================
-
-# Core Clustering Algorithms (Chất xám)
-keyword_cluster_app/services/clustering_service.py
-keyword_cluster_app/services/intent_service.py
-
-# AI Model Configuration & Logic
-keyword_cluster_app/model.py
-keyword_cluster_app/semantic_matcher.py
-keyword_cluster_app/semantic_utils.py
-
-# Advanced Processing Logic
-keyword_cluster_app/utils/text_processing.py
-keyword_cluster_app/utils/common.py
-
-# Worker & Background Processing
-keyword_cluster_app/worker.py
-
-# Configuration with sensitive parameters
-keyword_cluster_app/config.py
-
-# Internal documentation
-docs/knowledge_base/
-docs/architecture/
-
-# Test scripts (may reveal logic)
-scripts/testing/
-tests/
