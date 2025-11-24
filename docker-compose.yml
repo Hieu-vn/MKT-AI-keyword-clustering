@@ -1,0 +1,84 @@
+version: '3.8'
+x-app-environment: &app-environment
+  - REDIS_URL=${REDIS_URL:-redis://redis:6379/0}
+  - VLLM_URL=${VLLM_URL:-http://vllm:8000/v1/chat/completions} # vLLM service name as hostname
+  - LLM_MODEL_NAME=${LLM_MODEL_NAME:-Qwen/Qwen2.5-32B-Instruct}
+  - LLM_MAX_TOKENS=${LLM_MAX_TOKENS:-8192}
+  - LLM_TEMPERATURE=${LLM_TEMPERATURE:-0.2}
+  - LLM_TOP_P=${LLM_TOP_P:-0.95}
+  - LLM_TIMEOUT=${LLM_TIMEOUT:-180}
+  - EMBEDDING_MODEL=${EMBEDDING_MODEL:-bkai-foundation-models/vietnamese-bi-encoder}
+  - EMBEDDING_BATCH_SIZE=${EMBEDDING_BATCH_SIZE:-512}
+  - UMAP_N_NEIGHBORS=${UMAP_N_NEIGHBORS:-30}
+  - UMAP_N_COMPONENTS=${UMAP_N_COMPONENTS:-10}
+  - UMAP_MIN_DIST=${UMAP_MIN_DIST:-0.0}
+  - UMAP_METRIC=${UMAP_METRIC:-cosine}
+  - HDBSCAN_MIN_CLUSTER_SIZE=${HDBSCAN_MIN_CLUSTER_SIZE:-7}
+  - HDBSCAN_MIN_SAMPLES=${HDBSCAN_MIN_SAMPLES:-3}
+  - HDBSCAN_CLUSTER_SELECTION_EPSILON=${HDBSCAN_CLUSTER_SELECTION_EPSILON:-0.45}
+  - HDBSCAN_METRIC=${HDBSCAN_METRIC:-euclidean}
+  - LLM_PROMPT_KEYWORDS_LIMIT=${LLM_PROMPT_KEYWORDS_LIMIT:-400}
+  - TOTAL_KEYWORDS_PROCESS_LIMIT=${TOTAL_KEYWORDS_PROCESS_LIMIT:-80000}
+  - SYNC_MAX_KEYWORDS=${SYNC_MAX_KEYWORDS:-5000}
+  - ASYNC_MAX_KEYWORDS=${ASYNC_MAX_KEYWORDS:-100000}
+  - API_KEY=${API_KEY:-dev-secret-key}
+
+services:
+  vllm:
+    image: vllm/vllm-openai:latest
+    command: >
+      --model Qwen/Qwen2.5-32B-Instruct --tensor-parallel-size 2 --dtype half --max-model-len 32768 --gpu-memory-utilization 0.95
+    ports:
+      - "8000:8000"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [ gpu ]
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: poetry run uvicorn keyword_cluster_app.api:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8001:8000"
+    depends_on:
+      - vllm
+      - redis
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1 # Assign 1 GPU to the API/embedding service
+              capabilities: [ gpu ]
+    environment: *app-environment
+    volumes:
+      - ./keyword_cluster_app/api_keys.json:/app/api_keys.json
+
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: poetry run arq keyword_cluster_app.worker.WorkerSettings
+    depends_on:
+      - vllm
+      - redis
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1 # Assign 1 GPU to the worker
+              capabilities: [ gpu ]
+    environment: *app-environment
+    volumes:
+      - ./keyword_cluster_app/api_keys.json:/app/api_keys.json
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
