@@ -12,7 +12,7 @@ Hệ thống cung cấp giao diện API đồng bộ (Synchronous API) cho phép
 *   **Base URL**: `http://172.16.120.23:8001`
 *   **Authentication**: Bảo mật qua Header.
     *   Header Name: `X-API-Key`
-    *   Value: `sk-25d71a183b2b0aa9e0c99de4d1d04bd2`
+    *   Value: `sk-2631259f7b709b4d7fa370cf86aac259`
 
 ---
 
