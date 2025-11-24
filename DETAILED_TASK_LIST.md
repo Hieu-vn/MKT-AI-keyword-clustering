@@ -2,7 +2,7 @@
 
 > **Project**: AI-Powered Keyword Clustering System  
 > **Duration**: 11/11/2025 - 24/11/2025 (14 ngày làm việc)  
-> **Team Size**: 1 AI Engineer  
+> **Team Size**: 1 Phạm Khắc Hiếu  
 > **Total Tasks**: 54 tasks  
 > **Status**: ✅ COMPLETED
 
@@ -11,7 +11,7 @@
 ## 📊 TỔNG QUAN TASKS
 
 | Category | Tasks | Completed | Status |
-|----------|-------|-----------|--------|
+|----------|-------|-----------|--------| 
 | Research & Planning | 8 | 8 | ✅ 100% |
 | Code Refactoring | 12 | 12 | ✅ 100% |
 | Algorithm Optimization | 9 | 9 | ✅ 100% |
@@ -36,7 +36,7 @@
   - Xác định các metrics SEO cần thiết (KD, Commercial Intent, SERP Features)
   - Liệt kê các tính năng must-have vs nice-to-have
 - **Deliverable**: Requirements document
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-002: Nghiên cứu chuẩn SEO từ Ahrefs/Semrush/Moz
 - **Priority**: High
@@ -48,7 +48,7 @@
   - Tìm hiểu SERP Features prediction từ Moz
   - Tổng hợp công thức toán học và thresholds
 - **Deliverable**: `SEO_METRICS_KNOWLEDGE_BASE.md`
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-003: Đánh giá model AI hiện tại
 - **Priority**: High
@@ -60,7 +60,7 @@
   - So sánh với các model khác (multilingual-e5, PhoBERT)
   - Quyết định có cần thay đổi model không
 - **Deliverable**: Model evaluation report
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-004: Phân tích thuật toán clustering hiện tại
 - **Priority**: High
@@ -72,7 +72,7 @@
   - Tìm điểm yếu (over-clustering, under-clustering)
   - Đề xuất cải tiến
 - **Deliverable**: Algorithm analysis document
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-005: Thiết kế kiến trúc 3-layer clustering
 - **Priority**: High
@@ -85,7 +85,7 @@
   - Vẽ diagram kiến trúc
   - Xác định data flow
 - **Deliverable**: Architecture diagram
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-006: Lập kế hoạch triển khai chi tiết
 - **Priority**: Medium
@@ -97,7 +97,7 @@
   - Xác định dependencies giữa các tasks
   - Tạo roadmap
 - **Deliverable**: `IMPLEMENTATION_PLAN_SEO_METRICS.md`
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-007: Thiết kế API response schema
 - **Priority**: High
@@ -109,7 +109,7 @@
   - Tạo Pydantic models
   - Viết OpenAPI specs
 - **Deliverable**: API schema document
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-008: Setup development environment
 - **Priority**: High
@@ -121,7 +121,7 @@
   - Install dependencies
   - Test build & run
 - **Deliverable**: Working dev environment
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 ---
 
@@ -140,7 +140,7 @@
   mkdir -p scripts/{testing,management}
   ```
 - **Deliverable**: New folder structure
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-010: Di chuyển tài liệu vào /docs
 - **Priority**: Medium
@@ -152,7 +152,7 @@
   - Move SEO_METRICS_KNOWLEDGE_BASE.md → docs/knowledge_base/
   - Move architecture docs → docs/architecture/
 - **Deliverable**: Organized documentation
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-011: Di chuyển data files vào /data
 - **Priority**: Medium
@@ -164,7 +164,7 @@
   - Move clustering_*.json → data/test_results/
   - Move clustering_*.csv → data/test_results/
 - **Deliverable**: Organized data files
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-012: Di chuyển scripts vào /scripts
 - **Priority**: Low
@@ -174,7 +174,7 @@
   - Move test_all_levels.py → scripts/testing/
   - Organize other utility scripts
 - **Deliverable**: Organized scripts
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-013: Xóa files thừa và cache
 - **Priority**: Medium
@@ -187,7 +187,7 @@
   - Remove log files
   - Remove temporary files
 - **Deliverable**: Clean workspace
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-014: Tạo .gitignore chuẩn
 - **Priority**: Medium
@@ -200,7 +200,7 @@
   - Add sensitive files (api_keys.json)
   - Add test results
 - **Deliverable**: `.gitignore` file
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-015: Viết lại README.md hoàn chỉnh
 - **Priority**: High
@@ -214,7 +214,7 @@
   - API reference
   - Project structure
 - **Deliverable**: Professional README.md
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-016: Tạo docs/INDEX.md
 - **Priority**: Low
@@ -225,7 +225,7 @@
   - Mô tả ngắn gọn từng file
   - Lộ trình đọc cho từng đối tượng (Dev, SEO, User)
 - **Deliverable**: Documentation index
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-017: Thêm CORS middleware vào API
 - **Priority**: High
@@ -237,7 +237,7 @@
   app.add_middleware(CORSMiddleware, allow_origins=["*"], ...)
   ```
 - **Deliverable**: CORS-enabled API
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-018: Thêm Health Check endpoint
 - **Priority**: High
@@ -250,7 +250,7 @@
       return {"status": "healthy", "service": "keyword-clustering-api"}
   ```
 - **Deliverable**: `/health` endpoint
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-019: Cải thiện error handling
 - **Priority**: Medium
@@ -262,7 +262,7 @@
   - Log errors properly
   - Handle edge cases
 - **Deliverable**: Better error handling
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-020: Rebuild và test Docker container
 - **Priority**: High
@@ -274,7 +274,7 @@
   curl http://localhost:8001/health
   ```
 - **Deliverable**: Working container
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 ---
 
@@ -298,7 +298,7 @@
   return {"clusters": clusters}
   ```
 - **Deliverable**: Lighter clustering service
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-022: Loại bỏ micro_intent analysis
 - **Priority**: Medium
@@ -308,7 +308,7 @@
   - Remove `_analyze_micro_intent()` method calls
   - Keep method for potential future use but don't call it
 - **Deliverable**: Faster processing
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-023: Loại bỏ difficulty estimation
 - **Priority**: Medium
@@ -318,7 +318,7 @@
   - Remove `_estimate_difficulty()` method calls
   - Remove difficulty field from response
 - **Deliverable**: Cleaner output
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-024: Loại bỏ SERP features prediction
 - **Priority**: Medium
@@ -328,7 +328,7 @@
   - Remove `_predict_serp_features()` method calls
   - Remove serp_features field from response
 - **Deliverable**: Simpler logic
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-025: Loại bỏ question detection
 - **Priority**: Low
@@ -338,7 +338,7 @@
   - Remove `_detect_question()` method calls
   - Remove is_question, question_type fields
 - **Deliverable**: Streamlined code
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-026: Loại bỏ commercial score calculation
 - **Priority**: Medium
@@ -348,7 +348,7 @@
   - Remove `_calculate_commercial_score()` method calls
   - Remove commercial_score field
 - **Deliverable**: Faster execution
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-027: Loại bỏ related keywords extraction
 - **Priority**: Medium
@@ -358,7 +358,7 @@
   - Remove `_extract_related_keywords()` method calls
   - Remove related_keywords field
 - **Deliverable**: Reduced complexity
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-028: Tối giản Pydantic models
 - **Priority**: High
@@ -369,7 +369,7 @@
   - Update ClusterResult to only include: cluster_name, keywords, total_volume_topic
   - Comment out unused fields
 - **Deliverable**: Minimal API response
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-029: Benchmark tốc độ sau optimization
 - **Priority**: Medium
@@ -381,7 +381,7 @@
   - So sánh với version cũ
   - Document kết quả
 - **Deliverable**: Performance report
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 ---
 
@@ -400,7 +400,7 @@
   tfidf_matrix = vectorizer.fit_transform(original_texts)
   ```
 - **Deliverable**: Lexical vectors
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-031: Normalize semantic embeddings
 - **Priority**: High
@@ -412,7 +412,7 @@
   normalized_embeddings = normalize(embeddings)
   ```
 - **Deliverable**: Normalized vectors
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-032: Stack semantic + lexical vectors
 - **Priority**: High
@@ -425,7 +425,7 @@
   hybrid_matrix = hstack([sparse_embeddings, tfidf_matrix])
   ```
 - **Deliverable**: Hybrid matrix
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-033: Update UMAP to use hybrid matrix
 - **Priority**: High
@@ -436,7 +436,7 @@
   reduced_embeddings = umap_model.fit_transform(hybrid_matrix)
   ```
 - **Deliverable**: Hybrid UMAP reduction
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-034: Test hybrid clustering accuracy
 - **Priority**: High
@@ -447,7 +447,7 @@
   - Test case: "mua iPhone" vs "giá iPhone" (should cluster)
   - Verify results manually
 - **Deliverable**: Accuracy validation
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-035: Research Cross-Encoder models
 - **Priority**: High
@@ -459,7 +459,7 @@
   - Verify Vietnamese support
   - Choose best model
 - **Deliverable**: Model selection document
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-036: Implement Cross-Encoder loading
 - **Priority**: High
@@ -471,7 +471,7 @@
   model = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2', device='cuda')
   ```
 - **Deliverable**: Cross-Encoder model loaded
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-037: Implement _refine_clusters_with_cross_encoder method
 - **Priority**: High
@@ -485,7 +485,7 @@
   - Update matching_point with Cross-Encoder scores
   - Return refined clusters + rejected keywords
 - **Deliverable**: Refinement method
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-038: Integrate Cross-Encoder into pipeline
 - **Priority**: High
@@ -497,7 +497,7 @@
   - Update summary statistics
   - Add logging
 - **Deliverable**: Complete pipeline
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 ---
 
@@ -514,7 +514,7 @@
   from typing import List, Dict, Any, Optional, Tuple
   ```
 - **Deliverable**: Fixed import error
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-040: Handle small dataset edge case
 - **Priority**: High
@@ -525,7 +525,7 @@
   - Bypass UMAP for very small datasets
   - Use embeddings directly
 - **Deliverable**: Robust handling
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-041: Optimize UMAP parameters
 - **Priority**: Medium
@@ -536,7 +536,7 @@
   - Ensure n_neighbors < n_samples
   - Ensure n_components < n_neighbors
 - **Deliverable**: Dynamic parameters
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-042: Add error logging
 - **Priority**: Medium
@@ -547,7 +547,7 @@
   - Add logger.info() for important steps
   - Add logger.warning() for edge cases
 - **Deliverable**: Better debugging
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-043: Optimize Cross-Encoder batch processing
 - **Priority**: Low
@@ -557,7 +557,7 @@
   - Process all pairs in one batch instead of loop
   - Use model.predict() with list of pairs
 - **Deliverable**: Faster refinement
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 ---
 
@@ -575,7 +575,7 @@
   - Verify response format
   - Check for errors
 - **Deliverable**: Small dataset test passed
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-045: Test với dataset vừa (100 keywords)
 - **Priority**: High
@@ -586,7 +586,7 @@
   - Measure processing time
   - Verify clustering quality
 - **Deliverable**: Medium dataset test passed
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-046: Test với dataset lớn (1,492 keywords)
 - **Priority**: High
@@ -601,7 +601,7 @@
     - Top 10 coverage
     - Processing time
 - **Deliverable**: Large dataset test passed
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-047: Test accuracy với edge cases
 - **Priority**: High
@@ -613,7 +613,7 @@
   - Test: Question keywords
   - Test: Duplicate keywords
 - **Deliverable**: Edge cases handled
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-048: Load testing
 - **Priority**: Medium
@@ -625,7 +625,7 @@
   - Verify no crashes
   - Check memory usage
 - **Deliverable**: Load test report
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-049: API endpoint testing với Postman
 - **Priority**: High
@@ -638,7 +638,7 @@
   - Test with malformed JSON
   - Test rate limiting
 - **Deliverable**: API tests passed
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 ---
 
@@ -656,7 +656,7 @@
   - Expected response format
   - Giải thích các trường dữ liệu
 - **Deliverable**: Postman guide
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-051: Update API_DOCUMENTATION.md
 - **Priority**: High
@@ -668,7 +668,7 @@
   - Add examples
   - Add error codes
 - **Deliverable**: Updated API docs
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-052: Viết PROJECT_COMPLETION_REPORT.md
 - **Priority**: Medium
@@ -681,7 +681,7 @@
   - Kết quả đạt được
   - Deliverables
 - **Deliverable**: Completion report
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-053: Tạo danh sách tasks chi tiết (file này)
 - **Priority**: Low
@@ -693,7 +693,7 @@
   - Estimate và status
   - Deliverables
 - **Deliverable**: Detailed task list
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 #### TASK-054: Review và update toàn bộ documentation
 - **Priority**: Medium
@@ -705,7 +705,7 @@
   - Ensure consistency
   - Add missing information
 - **Deliverable**: Polished documentation
-- **Assignee**: AI Engineer
+- **Assignee**: Phạm Khắc Hiếu
 
 ---
 
@@ -852,6 +852,6 @@ Dự án được coi là hoàn thành khi:
 
 ---
 
-**Prepared by**: AI Engineer  
+**Prepared by**: Phạm Khắc Hiếu  
 **Date**: 24/11/2025  
 **Version**: 1.0
